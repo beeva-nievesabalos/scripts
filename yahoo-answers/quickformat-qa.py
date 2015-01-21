@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Lee los datos de Yahoo (XML), los analiza con word2vec (gensim)
+Lee los datos de Yahoo (XML)
 
 Created on Tue Jan 13 18:14:14 2015
 

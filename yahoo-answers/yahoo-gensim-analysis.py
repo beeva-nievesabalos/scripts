@@ -53,9 +53,6 @@ print similitud
 print "\nMás similiar a: novio"  
 similitud = model.most_similar([u'novio'], topn=5)
 print similitud
-print "\nMás similiar a: pregunta"  
-similitud = model.most_similar([u'pregunta'], topn=5)
-print similitud
 print "\nMás similiar a: coche"  
 similitud = model.most_similar([u'coche'], topn=5)
 print similitud
@@ -63,9 +60,32 @@ print "\nMás similiar a: telecinco"
 similitud = model.most_similar([u'telecinco'], topn=5)
 print similitud
 
+print "\nMás similiar a: religion"  
+similitud = model.most_similar([u'religion'], topn=5)
+print similitud
+print "\nMás similiar a: relaciones"  
+similitud = model.most_similar([u'relaciones'], topn=5)
+print similitud
+
+print "\nMás similiar a: categoria"  
+similitud = model.most_similar([u'categoria'], topn=5)
+print similitud
+print "\nMás similiar a: subcategoria"  
+similitud = model.most_similar([u'subcategoria'], topn=5)
+print similitud
+print "\nMás similiar a: idioma"  
+similitud = model.most_similar([u'idioma'], topn=5)
+print similitud
+print "\nMás similiar a: pregunta"  
+similitud = model.most_similar([u'pregunta'], topn=5)
+print similitud
 
 print "\nMás similar entre pareja y novio que no se parezca a hombre:"  
 mas_similar = model.most_similar(positive=['pareja', 'novio'], negative=['hombre'])
+print mas_similar
+
+print "\nMás similar entre religion y hombre:"  
+mas_similar = model.most_similar(positive=['religion', 'hombre'])
 print mas_similar
 
 print "\nWord vector de pregunta:"  
