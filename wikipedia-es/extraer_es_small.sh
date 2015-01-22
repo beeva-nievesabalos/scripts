@@ -1,4 +1,4 @@
-f [ ! -e eswiki-20150105-pages-articles2.xml.bz2 ]; then
+if [ ! -e eswiki-20150105-pages-articles2.xml.bz2 ]; then
     wget https://dumps.wikimedia.org/eswiki/20150105/eswiki-20150105-pages-articles2.xml.bz2 
 fi
 
